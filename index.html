@@ -4,11 +4,12 @@
 	<body>
 		<script src="https://d2dswzpx2y1fhq.cloudfront.net/_sdk/chegg.js"></script>
 		<script>
+			var referrerDomain = 'https://' + document.referrer.split('/')[2] + '/';
 			Chegg.init({
 				appName: 'henry',
 				version: 1,
 				redirect: 'https://liouh.github.io/hubapp-test/',
-				domain: 'https://roded.live.dev.cheggnet.com/'
+				domain: referrerDomain
 			});
 		</script>
 		<h1>Hello World!</h1>
